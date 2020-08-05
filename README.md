@@ -36,3 +36,10 @@
 <p> Para Acessar o admin basta acessar a rota "/" do projeto  e criar um login como administrador  </p>
 
 
+### Acesar API
+
+     <ul>
+   
+    
+    </ul>
+
