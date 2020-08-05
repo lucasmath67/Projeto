@@ -1,7 +1,8 @@
 <h1> Projeto  </h1>
 
 
-            <h3> Instalação </h3>
+  <h3> Instalação </h3>
+  
       <span>1- git clone </span>  
       <span>2-cp .env.example para .env</span>  
       <span>3- adicionar as configurações do banco de dados</span>  
