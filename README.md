@@ -46,7 +46,7 @@
      <p>post api/login =>autentifica o cliente  </p>
      <p>api/logout =>remove token de autentificação </p>
      <p>api/logout =>post api/register =>cria um usuário</p>
-     <h4>Exemplo ciração de usuário em json  </h4>
+     <h4>Exemplo ciração de usuário em json:  </h4>
         <p>
             {
         "name": "teste",
@@ -61,7 +61,7 @@
  <p>post api/orders =>cria um pedido obrigotirio mandar array de produtos </p>
  <p>get api/orders/id =>detalhes de um pedido</p>
  <p>delete api/orders/id =>deleta um pedido do usuário </p>
- <h4>Exemplo ciração de um pedido em json </h4>
+ <h4>Exemplo ciração de um pedido em json :</h4>
        <p>  { 	"client_id":1, 	"products":[
     	{ "id":1, "name":"teste" } 	] }
         </p>
