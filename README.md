@@ -43,15 +43,17 @@
 ### Acesar API
   <h3>EndPoints</h3>
      <h2>Login:  </h2>
-     <p>post api/login =>autentifica o usuário  </p>
+     <p>post api/login =>autentifica o cliente  </p>
      <p>api/logout =>remove token de autentificação </p>
      <p>api/logout =>post api/register =>cria um usuário</p>
      <p>Exemplo ciração de usuário em json 
         <p>
+            {
         "name": "teste",
-        "email": "teste@gmail.com",
-        "telephone": "22499481111",
-        "address": "rua teste" 
+        "email": "testee@gmail.com",
+        "telephone": "12345678910",
+        "password":  "teste12345",
+        "address": "rua teste" }
         </p>
  
      
