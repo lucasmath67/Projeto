@@ -65,4 +65,6 @@
        <p>  { 	"client_id":1, 	"products":[
     	{ "id":1, "name":"teste" } 	] }
         </p>
+        
+     obs:criar produto no admin antes de criar pedido.
  
