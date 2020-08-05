@@ -2,6 +2,10 @@
 
 # Projeto "Teste"
 
+<h3>Como Solucionei o Projeto </h3>
+<p> Solucionei o projeto proposto ,através da criação de um projeto em laravev(admin) com o uso do template ADMINLTE , e enquanto a parte de api utilizei o sanctum para
+    o login através de tokens;
+</p>
 
 
 
@@ -37,9 +41,5 @@
 
 
 ### Acesar API
-
-     <ul>
-   
-    
-    </ul>
-
+  <h3>EndPoints</h3>
+<p> </p>
