@@ -45,4 +45,5 @@
      <h2>Login:  </h2>
      <p>post api/login =>autentifica o usuário  </p>
      <p>api/logout =>remove token de autentificação </p>
-     <p>api/logout =>post api/register =>cria um usuário</p>
+     <p>api/logout =>post api/register =>cria um usuário <strong>Campos necessarios:"" </strong> </p>
+     
