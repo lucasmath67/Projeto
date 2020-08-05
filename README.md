@@ -20,12 +20,19 @@
 ### Setup
 
 
+<ol> 
 
-- cp .env.example para .env
-- adicionar as configurações do banco de dados
-$ composer install
-$ composer install
-$ php artisan migrate
-$ php artisan key: generate
-$ php artisan optimize:clear
+<li>$ cp .env.example para .env </li>
+<li>$ adicionar as configurações do banco de dados </li>
+<li>$ composer install </li>
+<li>$ composer install </li>
+<li>$ php artisan migrate </li>
+<li>$ php artisan key: generate </li>
+<li>$ php artisan optimize:clear </li>
+
+</ol>
+
+
+
+
 
