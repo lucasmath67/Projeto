@@ -55,5 +55,14 @@
         "password":  "teste12345",
         "address": "rua teste" }
         </p>
- 
+ <h2>Pedidos: </h2>
      
+ <p>get  api/orders =>trás todos os pedidos do usuário </p>
+ <p>post api/orders =>cria um pedido obrigotirio mandar array de produtos </p>
+ <p>get api/orders/id =>detalhes de um pedido</p>
+ <p>delete api/orders/id =>deleta um pedido do usuário </p>
+ <h4>Exemplo ciração de um pedidoe json </h4>
+       <p>  { 	"client_id":1, 	"products":[
+    	{ "id":1, "name":"teste" } 	] }
+        </p>
+ 
