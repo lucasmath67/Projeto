@@ -23,10 +23,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-                $table->foreign('client_id')
-                ->references('id')
-                ->on('clients')
-                ->onDelete('cascade');
+                $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
 
         });
     }

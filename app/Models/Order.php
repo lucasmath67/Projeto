@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    protected $fillable=['status'];
+    protected $fillable=['status','client_id'];
 
 
     public function client(){
@@ -17,4 +17,10 @@ class Order extends Model
 
         return $this->belongsToMany(Product::class);
     }
+    public $rules=[
+        'products'=>'required',
+        'products.*'=>'required',
+    
+
+    ];
 }

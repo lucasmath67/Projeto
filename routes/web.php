@@ -20,5 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', function() {
-    return view('home');
+    return view('index');
+
 })->name('home')->middleware('auth');
+
+
+Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
+
+Route::redirect('/', 'clients', 301);
+Route::get('clients', 'ClientController@index');
+Route::get('orders', 'OrderController@index');
+Route::get('orders/{order}/products', 'OrderController@getItens')->name('order.products');
+Route::resource('products', 'ProductController');
+});
+
+

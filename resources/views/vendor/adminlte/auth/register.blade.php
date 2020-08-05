@@ -17,6 +17,8 @@
     <form action="{{ $register_url }}" method="post">
         {{ csrf_field() }}
 
+
+
         {{-- Name field --}}
         <div class="input-group mb-3">
             <input type="text" name="name" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
@@ -29,6 +31,37 @@
             @if($errors->has('name'))
                 <div class="invalid-feedback">
                     <strong>{{ $errors->first('name') }}</strong>
+                </div>
+            @endif
+        </div>
+
+           {{-- Telephone field --}}
+           <div class="input-group mb-3">
+            <input type="number" name="telephone" class="form-control {{ $errors->has('telephone') ? 'is-invalid' : '' }}"
+                   value="{{ old('telephone') }}" placeholder="Telefone" autofocus>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-phone-square-alt {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                </div>
+            </div>
+            @if($errors->has('telephone'))
+                <div class="invalid-feedback">
+                    <strong>{{ $errors->first('telephone') }}</strong>
+                </div>
+            @endif
+        </div>
+           {{-- Adress field --}}
+           <div class="input-group mb-3">
+            <input type="text" name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}"
+                   value="{{ old('address') }}" placeholder="Endereço" autofocus>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-house-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                </div>
+            </div>
+            @if($errors->has('address'))
+                <div class="invalid-feedback">
+                    <strong>{{ $errors->first('address') }}</strong>
                 </div>
             @endif
         </div>
