@@ -21,8 +21,8 @@
 
 
 
-$ cp .env.example para .env
-$ adicionar as configurações do banco de dados
+- cp .env.example para .env
+- adicionar as configurações do banco de dados
 $ composer install
 $ composer install
 $ php artisan migrate
