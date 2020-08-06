@@ -27,7 +27,8 @@ Route::get('/home', function() {
 Route::redirect('/', 'login', 301);
 Route::redirect('/home', 'admin/clients', 301);
 Route::redirect('/clients', 'admin/clients', 301);
-Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
+
+Route::group(['prefix' => 'admin','middleware'=>'teste'], function () {
 Route::get('clients', 'ClientController@index');
 Route::get('orders', 'OrderController@index')->name('orders.index');
 Route::get('orders/{order}', 'OrderController@edit')->name('order.edit');

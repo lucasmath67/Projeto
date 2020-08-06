@@ -54,8 +54,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'telephone' => ['required', 'numeric','digits:11','unique:clients,telephone'],
-            'address' => ['required', 'string','min:3', 'max:255'],
+        
         ]);
     }
 
@@ -68,17 +67,13 @@ class RegisterController extends Controller
     protected function create(array $data)
 
 
-    {       $client=Client::create([
-        'name'=> $data['name'],
-        'email'=> $data['email'],
-        'telephone'=>$data['telephone'],
-        'address'=>$data['address']]);
+    {
 
-        return $client->user()->create([
+        return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'client_id'=>$client->id,
+
         ]);
     }
 }
