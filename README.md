@@ -47,8 +47,8 @@
      <h2>Login:  </h2>
      <p>post api/login =>autentifica o cliente  </p>
      <p>post api/logout =>remove token de autentificação </p>
-     <p>post api/register =>cria um usuário</p>
-     <h4>Exemplo ciração de usuário em json:  </h4>
+     <p>post api/register =>cria um cliente</p>
+     <h4>Exemplo ciração de cliente em json:  </h4>
         <p>
             {
         "name": "lucas matheus",
