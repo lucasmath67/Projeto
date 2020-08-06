@@ -7,13 +7,14 @@
 @stop
 
 @section('content')
+@include('includes.alerts')
     <div class="card">
         <div class="card-body">
             <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Status</th>
-                        <th scope="col">Código do Cliente</th>
+                        <th scope="col">Código do Cliente - Nome</th>
                         <th scope="col">Data de Criação</th>
                         <th scope="col">Produtos</th>
                     </tr>
@@ -31,6 +32,7 @@
 
                             <i class="fas fa-archive"></i>
                             </a>
+                            <a href="{{route('order.edit',$order->id)}}" class="btn btn-warning"><i class="fas fa-edit"</a>
                             </td>
 
                         </tr>

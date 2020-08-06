@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OrderEditRequest;
 use App\Models\Order;
 use Illuminate\Http\Request;
 
@@ -31,5 +32,18 @@ class OrderController extends Controller
     }
 
 
+    public function edit(Order $order){
+
+        return view('pages.orders.edit',compact('order'));
+    }
+
+    public function update ( Order $order ,OrderEditRequest $request){
+          $order = $order->update(['status'=>$request->status]);
+            if($order){
+
+                return redirect()->route('orders.index')->with(['success'=>"Status Atualizado Com Sucesso"]);
+            }
+            return redirect()->back();
+    }
 
 }

@@ -24,12 +24,14 @@ Route::get('/home', function() {
 
 })->name('home')->middleware('auth');
 
-
+Route::redirect('/', 'login', 301);
+Route::redirect('/home', 'admin/clients', 301);
+Route::redirect('/clients', 'admin/clients', 301);
 Route::group(['prefix' => 'admin','middleware'=>'auth'], function () {
-
-Route::redirect('/', 'clients', 301);
 Route::get('clients', 'ClientController@index');
-Route::get('orders', 'OrderController@index');
+Route::get('orders', 'OrderController@index')->name('orders.index');
+Route::get('orders/{order}', 'OrderController@edit')->name('order.edit');
+Route::put('orders/{order}', 'OrderController@update')->name('order.update');
 Route::get('orders/{order}/products', 'OrderController@getItens')->name('order.products');
 Route::resource('products', 'ProductController');
 });
