@@ -60,7 +60,7 @@
  <h2>Pedidos: </h2>
      
  <p>get  api/orders =>trás todos os pedidos do usuário </p>
- <p>post api/orders =>cria um pedido o(brigatorio mandar array de produtos) </p>
+ <p>post api/orders =>cria um pedido (obrigatorio mandar array de produtos) </p>
  <p>get api/orders/id =>detalhes de um pedido</p>
  <p>delete api/orders/id =>deleta um pedido do usuário </p>
  <h4>Exemplo ciração de um pedido em json :</h4>
