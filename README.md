@@ -34,6 +34,7 @@
 <li>$ php artisan migrate </li>
 <li>$ php artisan key: generate </li>
 <li>$ php artisan optimize:clear </li>
+<li>$ php artisan serve </li>
 
 </ol>
 
@@ -50,8 +51,8 @@
      <h4>Exemplo ciração de usuário em json:  </h4>
         <p>
             {
-        "name": "teste",
-        "email": "testee@gmail.com",
+        "name": "lucas matheus",
+        "email": "lucasmath67@gmail.com",
         "telephone": "12345678910",
         "password":  "teste12345",
         "address": "rua teste" }
@@ -59,7 +60,7 @@
  <h2>Pedidos: </h2>
      
  <p>get  api/orders =>trás todos os pedidos do usuário </p>
- <p>post api/orders =>cria um pedido obrigotirio mandar array de produtos </p>
+ <p>post api/orders =>cria um pedido o(brigatorio mandar array de produtos) </p>
  <p>get api/orders/id =>detalhes de um pedido</p>
  <p>delete api/orders/id =>deleta um pedido do usuário </p>
  <h4>Exemplo ciração de um pedido em json :</h4>
